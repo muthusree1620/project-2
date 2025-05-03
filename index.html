@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coaching Platform</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Saira:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body class="bg-white text-gray-800">
+  <nav class="w-full flex items-center justify-between py-4 px-6 bg-white shadow-md fixed top-0 z-50">
+    <!-- Logo -->
+    <div class="flex items-center space-x-2">
+      <img src="/logo.png" alt="Logo" class="h-7"/>
+      
+    </div>
+  
+    <!-- Nav Links -->
+    <ul class="hidden md:flex space-x-8 text-sm font-medium text-gray-700">
+      <li><a href="#" class="hover:text-blue-600">Home</a></li>
+      <li><a href="#" class="hover:text-blue-600">About</a></li>
+      <li><a href="#" class="hover:text-blue-600">Courses</a></li>
+      <li><a href="#" class="hover:text-blue-600">Contact</a></li>
+    </ul>
+  
+    <!-- Right Section -->
+    <div class="flex items-center space-x-4 text-sm">
+      <a href="#" class="relative hover:text-blue-600  flex items-center space-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m20.25 7.5-.625 10.632a2.25 2.25 0 0 1-2.247 2.118H6.622a2.25 2.25 0 0 1-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+        </svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+        </svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+        </svg>
+        </a>
+      <a href="#" class="hover:text-blue-600">Login</a>
+      <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md">Signup</a>
+    </div>
+  </nav>
+  
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-500 text-white py-20 px-6 text-center">
+    <div class="max-w-6xl  grid md:grid-cols-2 gap-10 items-center">
+      <div><span class="font-semibold font-Righteous text-white-700">
+        SUCCESSFULL COACHES ARE VISIONARIES</span>
+        <h1 class="text-5xl md:text-7xl font-Righteous mt-4 mb-4">Good <span class="text-blue-300">coaching</span> is<br>
+           good teaching & <br> nothing else.</h1>
+        
+        <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+          <button class="bg-none border border-white text-white-600 px-6 py-2 rounded-md font-semibold mt-4">View Courses</button>
+          <button class="border-none px-6 py-2 rounded-none mt-4 mb-4">Get Free Consultation</button>
+        </div>
+        <div class="flex items-center bg-white px-4 py-2 w-full max-w-sm shadow-md mt-8 mb-8">
+          <input type="text"placeholder="What do you want to learn today?" class="flex-1 bg-transparent outline-none border rounded-md text-gray-700 placeholder-gray-400"/>
+          <button class="bg-[#5E3BEE] text-white px-6 py-2 rounded-md text-sm font-medium max-w-sm flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+            </svg> Search </button>
+        </div>
+        
+      </div>
+      
+      <div class="relative w-full md:w-1/2 flex justify-between items-center ml-auto">
+        <!-- Tooltip inside hero, positioned on the left side -->
+        <div class="absolute top-[-10px] left-[-80%] bg-none bg-opacity-80 backdrop-blur-md rounded-xl p-4 shadow-lg w-64 z-20">
+          <h4 class="text-sm font-semibold text-white mb-1">Shynam Coach</h4>
+          <p class="text-sm text-white Righteous text-base shadow-none">
+            In a coaching role, you ask questions and rely more on your staff, who become the experts to provide the information.
+          </p>
+        </div>
+      
+        <!-- Blurred White Circle -->
+        <div class="absolute w-[300px] h-[300px] md:w-[450px] md:h-[450px] bg-white rounded-full blur-[50px] opacity-70 z-0"></div>
+      
+        <!-- Hero Image, positioned on the right -->
+        <img src="hero_image.png" alt="Hero" class="relative z-10 w-[200px] md:w-[300px] h-[200px] md:h-[300px] rounded-full" />
+      </div><!-- Outer Wrapper -->
+     
+
+      <div class="absolute inset-0  opacity-50 top-1800% left 150% z-0">
+
+        <!-- Layered Image Stack Section -->
+        <div class="relative w-full h-full flex justify-center items-center">
+          <!-- Bottom Layer -->
+          <img src="Rectangle 8675.png" alt="Background Layer"
+               class="absolute w-[280px] md:w-[320px] h-[280px] md:h-[320px] z-0" />
+      
+          <!-- Middle Layer -->
+          <img src="Rectangle 8674.png" alt="Middle Layer"
+               class="absolute w-[220px] md:w-[260px] h-[220px] md:h-[260px] z-10" />
+      
+          <!-- Top Layer -->
+          <img src="Rectangle 8673.png" alt="Top Layer"
+               class="absolute w-[160px] md:w-[200px] h-[160px] md:h-[200px] z-20" />
+        </div>
+      </div>
+    </div>
+        <!-- Logo Row Section -->
+        <div class="w-full bg-gradient-to-r from-violet-600 to-indigo-600 p-6 shadow-lg mt--25 rounded-lg">
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-x-10 gap-y-6 justify-items-center w-full">
+            <img src="spotify.png" alt="Spotify Logo" class="h-8" />
+            <img src="amazon.png" alt="Amazon Logo" class="h-8" />
+            <img src="spotify.png" alt="Netflix Logo" class="h-8" />
+            <img src="cisco.png" alt="Cisco Logo" class="h-8" />
+            <img src="life.png" alt="Life Logo" class="h-8" />
+            <img src="amazon.png" alt="Google Logo" class="h-8" />
+          </div>
+        </div>
+      
+      </div>
+      
+</section>
+  <!-- Featured Courses -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8">Featured Course</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Course Card -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <img src="3d-map-pins.png" alt="Course" class="mb-4 rounded-lg" />
+          <div class="font-saira font-medium text-sm text-[#4E596B]
+            flex justify-between items-center rounded-lg px-4 py-2">
+            <span>1,957 Students</span>
+            <span>01h 59m</span>
+          </div>
+          <p class="font-saira font-semibold text-[25px] text-[#324361]">
+            Motion Graphics: Create a Nice
+            Typography Animation</p>
+            <div class="mt-2  text-black flex justify-between items-center">
+              <span>Rs. 499</span>
+              <!-- Shopping Cart Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   fill="none"
+                   viewBox="0 0 24 24"
+                   stroke-width="1.5"
+                   stroke="currentColor"
+                   class="w-6 h-6 text-black">
+                <path stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 
+                         3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 
+                         2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 
+                         14.25L5.106 5.272M6 20.25a.75.75 0 1 1-1.5 
+                         0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 
+                         1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+              </svg>
+            </div>
+            </div>
+                    <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <img src="3d-jigsaw-puzzle.png" alt="Course" class="mb-4 rounded-lg" />
+          <div class="font-saira font-medium text-sm text-[#4E596B]
+            flex justify-between items-center rounded-lg px-4 py-2">
+            <span>9,575 Students</span>
+            <span>01h 59m</span>
+          </div>
+          <p class="font-saira text-[25px] text-[#324361]">Advance PHP knowledge with JS to
+            make smart web</p>
+            <div class="mt-2 text-black flex justify-between items-center">
+              <span>Rs. 499</span>
+              <!-- Shopping Cart Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   fill="none"
+                   viewBox="0 0 24 24"
+                   stroke-width="1.5"
+                   stroke="currentColor"
+                   class="w-6 h-6 text-black">
+                <path stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 
+                         3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 
+                         2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 
+                         14.25L5.106 5.272M6 20.25a.75.75 0 1 1-1.5 
+                         0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 
+                         1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+              </svg>
+            </div>
+            
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <img src="rocket-launch.png" alt="Course" class="mb-4 rounded-lg" />
+          <div class="font-saira font-medium text-sm text-[#4E596B]
+            flex justify-between items-center rounded-lg px-4 py-2">
+            <span>2957 Students </span>
+            <span>02h 49m</span>
+          </div>
+
+          <p class="font-saira font-semibold text-[25px] text-[#324361]">Education Software and PHP and JS
+            System Script</p>
+            <div class="mt-2  text-black flex justify-between items-center">
+              <span>Rs. 499</span>
+              <!-- Shopping Cart Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   fill="none"
+                   viewBox="0 0 24 24"
+                   stroke-width="1.5"
+                   stroke="currentColor"
+                   class="w-6 h-6 text-black">
+                <path stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 
+                         3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 
+                         2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 
+                         14.25L5.106 5.272M6 20.25a.75.75 0 1 1-1.5 
+                         0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 
+                         1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+              </svg>
+                    </div>
+      </div>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6 mt-8">
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <img src="red-up-arrow-coin.png" alt="Course" class="mb-4 rounded-lg" />
+          <div class="font-saira font-medium text-sm text-[#4E596B]
+            flex justify-between items-center rounded-lg px-4 py-2">
+            <span>5,457 Students</span>
+            <span>01h 49m</span>
+          </div>
+          <p class="font-saira font-semibold text-[25px] text-[#324361]"> The Complete Financial Analyst
+            Training & Investing</p>
+            <div class="mt-2  text-black flex justify-between items-center">
+              <span>Rs. 499</span>
+              <!-- Shopping Cart Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   fill="none"
+                   viewBox="0 0 24 24"
+                   stroke-width="1.5"
+                   stroke="currentColor"
+                   class="w-6 h-6 text-black">
+                <path stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 
+                         3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 
+                         2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 
+                         14.25L5.106 5.272M6 20.25a.75.75 0 1 1-1.5 
+                         0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 
+                         1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+              </svg>
+            </div>
+            </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <img src="travel-concept.png" alt="Course" class="mb-4 rounded-lg" />
+          <div class="font-saira font-medium text-sm text-[#4E596B]
+            flex justify-between items-center rounded-lg px-4 py-2">
+            <span>595 Students </span>
+            <span>01h 49m</span>
+          </div>
+          <p class="font-saira  text-[25px] text-[#324361]">Marketing 2023: Complete Guide To
+            Instagram Growth</p>
+            <div class="mt-2  text-black flex justify-between items-center">
+              <span>Rs. 499</span>
+              <!-- Shopping Cart Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   fill="none"
+                   viewBox="0 0 24 24"
+                   stroke-width="1.5"
+                   stroke="currentColor"
+                   class="w-6 h-6 text-black">
+                <path stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 
+                         3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 
+                         2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 
+                         14.25L5.106 5.272M6 20.25a.75.75 0 1 1-1.5 
+                         0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 
+                         1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+              </svg>
+            </div>
+                    </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <img src="online-banking-icon.png" alt="Course" class="mb-4 rounded-lg" />
+          <div class="font-saira font-medium text-sm text-[#4E596B]
+            flex justify-between items-center rounded-lg px-4 py-2">
+            <span>458 Students</span>
+            <span>03h 00m</span>
+          </div>
+
+          <p class="font-saira font-semibold text-[25px] text-[#324361] align-left">Learn 3D Modelling and Design
+            for Beginners</p>
+            <div class="mt-2  text-black flex justify-between items-center">
+              <span>Rs. 499</span>
+              <!-- Shopping Cart Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   fill="none"
+                   viewBox="0 0 24 24"
+                   stroke-width="1.5"
+                   stroke="currentColor"
+                   class="w-6 h-6 text-black">
+                <path stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 
+                         3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 
+                         2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 
+                         14.25L5.106 5.272M6 20.25a.75.75 0 1 1-1.5 
+                         0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 
+                         1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+              </svg>
+            </div>
+                    </div>
+                    </div>
+
+           <button class="mt-8 px-6 py-2 bg-indigo-600 text-white rounded-full items-center">Explore Courses</button>
+    </div>
+  </div>
+
+  </section>
+  <section class="bg-gradient-to-b from-[#739FE8] to-[#4F18CA] py-20">
+    <div class="max-w-6xl mx-auto text-center px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Why <span class="text-blue-600">learn</span> with our courses?</h2>
+      <p class="font-saira font-semibold text-[25px] text-[#324361] align-left">
+        We are providing the best courses and top classes. And<br> enhancing placement training...
+      </p>
+  
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Card 1 -->
+        <div class="bg-none shadow-md  p-6 flex flex-col items-center text-center">
+          <div class="bg-white-100 p-4 rounded-full mb-4">
+            <img src="Icon (1).png" alt="Course" class="mb-4 rounded-lg" />
+          </div>
+          <h3 class="text-xl font-semibold text-white mb-2">01. Learn</h3>
+          <p class="text-white text-sm">
+            Learn continually.There is always<br>
+            "one more thing" to learn.
+          </p>
+        </div>
+        <!-- Card 2 -->
+        <div class="bg-none shadow-md rounded-2xl p-6 flex flex-col items-center text-center">
+          <div class="bg-none p-4 rounded-full mb-4">
+            
+            <img src="Icon (3).png" alt="Course" class="mb-4 rounded-lg" />
+
+            
+          </div>
+          <h3 class="text-xl font-semibold text-white mb-2">02. Graduate</h3>
+          <p class="text-white text-sm">
+            Be bold,be courageous<br> and be your best.
+          </p>
+        </div>
+  
+        <!-- Card 3 -->
+        <div class="bg-none shadow-md rounded-2xl p-6 flex flex-col items-center text-center">
+          <div class="bg-white-100 p-4 rounded-full mb-4">
+            <img src="Icon (2).png" alt="Course" class="mb-4 rounded-lg" />
+          </div>
+          <h3 class="text-xl font-semibold text-white mb-2">03. Work</h3>
+          <p class="text-white text-sm">
+            Great companies are built in<br>
+            the office, with hard work put<br>
+            in by team.
+          </p>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  <!--categories-->
+  <section class="py-16 bg-[#D9ECFF] text-center">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-4xl font-bold mb-2">
+        Top <span class="text-blue-600">Categories</span>
+      </h2>
+      <p class="text-gray-500 text-base mb-10">
+        100+ unique online course list designs
+      </p>
+  
+      <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
+        <!-- Category Card -->
+        <div class="bg-white rounded-2xl shadow-md p-6 hover:-translate-y-1 transition">
+          <div class="text-3xl mb-3"><img src="div.features-box-image (6).png"/></div>
+          <h3 class="font-Righteous font-regular text-lg mb-4 text-[#324361]">Digital Marketing</h3>
+          <p class="text-gray-500 text-sm">35 Courses</p>
+        </div>
+  
+        <div class="bg-white rounded-2xl shadow-md p-6 hover:-translate-y-1 transition">
+          <div class="text-3xl mb-3"><img src="div.features-box-image (1).png"/></div>
+          <h3 class="font-Righteous font-regular text-lg mb-4 text-[#324361]">Web Development</h3>
+          <p class="text-gray-500 text-sm">50 Courses</p>
+        </div>
+  
+        <div class="bg-white rounded-2xl shadow-md p-6 hover:-translate-y-1 transition">
+          <div class="text-3xl mb-3"><img src="div.features-box-image (2).png"/></div>
+          <h3 class="font-Righteous font-regular text-lg mb-4 text-[#324361]">Art & Humanities</h3>
+          <p class="text-gray-500 text-sm">31 Courses</p>
+        </div>
+  
+        <div class="bg-white rounded-2xl shadow-md p-6 hover:-translate-y-1 transition">
+          <div class="text-3xl mb-3"><img src="div.features-box-image (3).png"/></div>
+          <h3 class="font-Righteous font-regular text-lg mb-4 text-[#324361]">Personal Development</h3>
+          <p class="text-gray-500 text-sm">28 Courses</p>
+        </div>
+  
+        <div class="bg-white rounded-2xl shadow-md p-6 hover:-translate-y-1 transition">
+          <div class="text-3xl mb-3"><img src="div.features-box-image (4).png"/></div>
+          <h3 class="font-Righteous font-regular text-lg mb-4 text-[#324361]">IT and Software</h3>
+          <p class="text-gray-500 text-sm">100 Courses</p>
+        </div>
+  
+        <div class="bg-white rounded-2xl shadow-md p-6 hover:-translate-y-1 transition">
+          <div class="text-3xl mb-3"><img src="div.features-box-image (5).png"/></div>
+          <h3 class="font-Righteous font-regular text-lg mb-4 text-[#324361]">Graphic Design</h3>
+          <p class="text-gray-500 text-sm">40 Courses</p>
+        </div>
+      </div>
+    </div>
+  </section>
+        </div>
+    </div>
+  </section>
+  
+  
+      <!-- Subscription Form -->
+     
+      <section class="bg-[#f8fbff] py-20">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="bg-gradient-to-r from-[#7358f5] to-[#a94cf7] rounded-3xl p-10 sm:p-16 text-white text-center shadow-xl">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+              Subscribe For Get Update <br />Every New Courses
+            </h2>
+            <p class="text-base sm:text-lg mb-8">
+              20k+ students already joined with us. Catch updates for new courses.
+            </p>
+      
+            <form class="flex flex-col sm:flex-row justify-center items-center gap-4 max-w-2xl mx-auto">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="w-full sm:flex-1 px-6 py-3 rounded-full text-black focus:outline-none focus:ring-2 focus:ring-white"
+                required
+              />
+              <button
+                type="submit"
+                class="bg-white text-[#7358f5] font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition"
+              >
+                Subscribe
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block ml-2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5m-8.25 8.25L21 12l-5.25-8.25" />
+              </button>
+            </form>
+          </div>
+        </div>
+          
+
+   </section>
+    <section class="py-20 bg-[#f8fbff] relative">
+      <div class="max-w-4xl mx-auto px-4">
+        <div class="relative rounded-3xl overflow-hidden shadow-xl">
+          <!-- Girl Image -->
+          <img
+            src="Rectangle 8691.png"
+            alt="Video Thumbnail"
+            class="w-full object-cover"
+          />
+    
+          <!-- Centered Play Button -->
+          <button
+            class="absolute inset-0 flex items-center justify-center"
+            aria-label="Play Video"
+          >
+            <div class="w-16 h-16 bg-white text-[#7358f5] rounded-full flex items-center justify-center shadow-md hover:scale-110 transition">
+              <!-- Play Icon -->
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+              <img
+              src="banner_right.png (1).png"
+              alt="Corner Decoration"
+              class="absolute bottom-4 right-6 w-14 h-14 md:w-16 md:h-16 object-contain"/>
+    </div>
+          </button>
+        </div>
+      </div>
+    
+    </section>
+      
+      </section>
+        <!-- Testimonials --><section class="bg-[#f8fbff] py-20 text-center">
+  <h2 class="text-2xl font-bold text-[#0E38CD] mb-2">Testimonials</h2>
+  <p class="text-[#4E596B] mb-40">What our students say about us</p>
+
+  <div class="relative flex flex-col md:flex-row justify-center items-start px-4 gap-4 md:gap-0">
+    <!-- Left Card -->
+    <div class="relative z-10 bg-white rounded-xl shadow-lg px-6 py-8 pt-16 max-w-sm w-full -mr-4 md:scale-95">
+      <div class="absolute -top-12 left-1/2 transform -translate-x-1/2">
+        <img
+          src="th (1) 4.png"
+          alt="Student 1"
+          class="w-20 h-20 rounded-full border-4 border-white shadow-md"
+        />
+      </div>
+      <p class="text-gray-700 mb-4 text-sm">
+        Amazing instructor and the course quality exceeded expectations.
+      </p>
+      <div class="text-yellow-400 text-lg">★★★★★</div>
+    </div>
+
+    <!-- Center (Front) Card -->
+    <div class="relative z-20 bg-white rounded-xl shadow-2xl px-6 py-8 pt-16 max-w-sm w-full scale-105">
+      <div class="absolute -top-12 left-1/2 transform -translate-x-1/2">
+        <img
+          src="th (1) 4.png"
+          alt="Student 2"
+          class="w-20 h-20 rounded-full border-4 border-white shadow-md"
+        />
+      </div>
+      <p class="text-gray-700 mb-4 text-sm">
+        The content was thorough and well structured. I would definitely recommend!
+      </p>
+      <div class="text-yellow-400 text-lg">★★★★★</div>
+    </div>
+
+    <!-- Right Card -->
+    <div class="relative z-10 bg-white rounded-xl shadow-lg px-6 py-8 pt-16 max-w-sm w-full -ml-4 md:scale-95">
+      <div class="absolute -top-12 left-1/2 transform -translate-x-1/2">
+        <img
+          src="th (1) 4.png"
+          alt="Student 3"
+          class="w-20 h-20 rounded-full border-4 border-white shadow-md"
+        />
+      </div>
+      <p class="text-gray-700 mb-4 text-sm">
+        I’ve learned a lot from this course. The instructor is very clear and engaging.
+      </p>
+      <div class="text-yellow-400 text-lg">★★★★★</div>
+    </div>
+  </div>
+</section>
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-10">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-5 gap-6 text-sm">
+      <div>
+        <h4 class="font-semibold mb-2">Connect</h4>
+          <img src="logo.png" alt="Logo" class="h-7" />
+    
+        <p="text-sm">Sri Jagannath Nivas, 8-1-164/345/A1. <br>
+        Pragathi Colony,Mailerdevpally,Navab<br>
+      Saheb Kunta,Hyd-500005</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Classes</h4>
+        <ul>
+          <li>Classroom Courses</li>
+          <li>Virtual Classroom Courses</li>
+          <li>E-learning Courses</li>
+          <li>Video Courses</li>
+          <li>Offline Courses</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Community</h4>
+        <ul>
+          <li>Learners</li>
+          <li>Partners</li>
+          <li> Developers</li>
+          <li>Transactions</li>
+          <li>Blog</li>
+          
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Quick Links</h4>
+        <ul>
+          <li>Home</li>
+          <li>Professional Education</li>
+          <li>Courses</li>
+          <li>Admissions</li>
+          <li>Testimonials</li>
+          <li>Programs</li>
+        </ul>
+        </div>
+        <div>
+        <h4 class="font-semibold mb-2">More</h4>
+        <ul>
+          <li>Press</li>
+          <li>Investors</li>
+          <li>Terms</li>
+          <li>Privacy</li>
+          <li>Help</li>
+          <li>Contact</li>
+
+        </ul>
+
+      </div>
+    </div>
+    <footer class="bg-gradient-to-r from-[#9549f0] to-[#5145e9] py-6">
+      <div class="flex justify-center space-x-4 mb-4">
+        <!-- Facebook -->
+        <a href="#" class="bg-[#3b5998] text-white w-10 h-10 flex items-center justify-center rounded-full hover:opacity-80 transition">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+    
+        <!-- Twitter -->
+        <a href="#" class="bg-[#1da1f2] text-white w-10 h-10 flex items-center justify-center rounded-full hover:opacity-80 transition">
+          <i class="fab fa-twitter"></i>
+        </a>
+    
+        <!-- Instagram -->
+        <a href="#" class="bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 text-white w-10 h-10 flex items-center justify-center rounded-full hover:opacity-80 transition">
+          <i class="fab fa-instagram"></i>
+        </a>
+    
+        <!-- LinkedIn -->
+        <a href="#" class="bg-[#0077b5] text-white w-10 h-10 flex items-center justify-center rounded-full hover:opacity-80 transition">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+    
+        <!-- YouTube -->
+        <a href="#" class="bg-[#ff0000] text-white w-10 h-10 flex items-center justify-center rounded-full hover:opacity-80 transition">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    
+      <p class="text-center text-white text-sm">
+        © 2025 Eduvi. All rights reserved.
+      </p>
+    </footer>
+    
+</body>
+</html>
